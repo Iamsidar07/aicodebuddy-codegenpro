@@ -14,7 +14,7 @@ const Navbar = () => {
         </Link>
         <div className="flex items-center gap-2">
           <ThemeSwitcher />
-          <Link href={'https://github.com/iamsidar07/'} className="flex items-center gap-2">
+          <Link href={'https://github.com/Iamsidar07/aicodebuddy-codegenpro'} className="flex items-center gap-2">
             <div className="w-8 h-8 relative">
               <Image src={'/icons/github.svg'} alt="logo" fill className="object-contain" />
             </div>
