@@ -23,7 +23,7 @@ const ThemeSwitcher = () => {
 
 
     return (
-        <div className=''>
+        <div className='relative'>
             {
                 theme === "light" && (<Image src={'/icons/light.svg'} alt='light theme' width={30} height={30} className='object-contain cursor-pointer' onClick={handleThemeClick} />)
             }
@@ -36,7 +36,7 @@ const ThemeSwitcher = () => {
 
             {
                 isDropdownMenuShown && (
-                    <div className='absolute top-[65px] right-4 z-10 min-w-[140px] bg-white rounded-md shadow-xl dark:bg-[#2C2C2C] border dark:border-[#444444] flex flex-col items-baseline'>
+                    <div className='absolute top-12 right-2 z-10 min-w-[140px] bg-white rounded-md shadow-xl dark:bg-[#2C2C2C] border dark:border-[#444444] flex flex-col items-baseline'>
                         <button type='button' onClick={() => {
                             setTheme("system");
                             setIsDropdownMenuShown(false)
