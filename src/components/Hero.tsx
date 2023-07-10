@@ -3,8 +3,8 @@ import React from 'react'
 
 const Hero = () => {
     return (
-        <section className='bg-[#FFF7EE] dark:bg-[#2C2C2C] min-h-screen  pt-12 lg:pt-36 relative' >
-            <div className='w-64 h-64 rounded-full bg-gradient-to-t from-yellow-100 to-violet-100 dark:from-green-500 dark:to-purple-700 blur-lg filter absolute bottom-1/4 left-1/4 '/>
+        <section className='bg-[#FFF7EE] dark:bg-[#2C2C2C] min-h-screen  pt-36 relative' >
+            <div className='w-64 h-64 rounded-full bg-gradient-to-t from-yellow-100 to-violet-100 dark:from-green-500 dark:to-purple-700 blur-lg filter absolute bottom-0 left-4 lg:bottom-1/4 lg:left-1/4 '/>
             <div className='flex flex-col w-full h-full items-center max-w-[1440px] mx-auto '>
                 <span className='px-7 py-1.5 mb-2 border dark:border-[#444444] text-[#fff] bg-[#2C2C2C] dark:bg-gradient-to-r from-pink-600 to-transparent text-left rounded-full text-sm '>Intelligent</span>
                 <h1 className='text-4xl lg:text-6xl text-center font-medium'> Code Generation for Developers</h1>

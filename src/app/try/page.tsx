@@ -31,11 +31,9 @@ const TryPage = () => {
           },
           body: JSON.stringify(codeBlock),
         });
-        console.log({ response })
         const data = await response.json();
         setResult(data.result);
       } catch (error: any) {
-        console.log(error);
         alert(error.message);
       } finally {
         setIsLoading(false);
@@ -52,10 +50,9 @@ const TryPage = () => {
     setCodeBlock(e.target.value);
   }
 
-  console.log({ result, codeBlock, featureTab, isLoading, endPoint: `/api/${featureTab}`, isButtonDisabled })
 
   return (
-    <section className='min-h-[calc(100vh_-_70px)]  py-12 lg:py-32 flex flex-col items-center'>
+    <section className='min-h-[calc(100vh_-_70px)] py-32 flex flex-col items-center'>
       <div className='flex flex-col items-center w-full  max-w-[1440px] mx-auto px-4 py-6'>
         <h1 className='text-2xl lg:text-7xl font-medium text-center'>Your Ai developer friend</h1>
         <div className='flex items-center justify-start w-full flex-wrap gap-4 lg:gap-6 mt-6'>
