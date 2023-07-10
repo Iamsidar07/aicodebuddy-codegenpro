@@ -71,17 +71,17 @@ const TryPage = () => {
         </form>
 
         {
-          result && <div className='mt-12 px-4 py-6 lg:py-8 outline-none flex flex-col gap-4 w-full border dark:border-[#444444]' >
+          result && <div className='mt-12 px-4 py-6 lg:py-8 outline-none flex flex-col flex-wrap gap-4 w-full border dark:border-[#444444]' >
             <h2 className='text-lg lg:text-2xl font-medium text-left'>Output:</h2>
-            <span>Your Que: <code>{codeBlock}</code></span>
+            <p>Your Que: <code className='max-w-full'>{codeBlock}</code></p>
             <span>AI answer:</span>
-            <code spellCheck={false} dangerouslySetInnerHTML={{ __html: result.trim().replaceAll('\n', '<br/>') }} contentEditable className='outline-none' />
+            <code spellCheck={false} dangerouslySetInnerHTML={{ __html: result.trim().replaceAll('\n', '<br/>') }} contentEditable className='outline-none max-w-full' />
           </div>
         }
         {
           isLoading && <div className='mt-12  outline-none w-full ' >
             <p className='text-lg my-2'>Asking to ai developer friend ...</p>
-            <div className='flex flex-col gap-4 w-full  border shadow px-4 py-6 lg:py-8 dark:border-[#444444] animate-pulse'>
+            <div className='flex flex-col gap-4 w-full bg-[#FFF7EE] dark:bg-transparent  border shadow px-4 py-6 lg:py-8 dark:border-[#444444] animate-pulse'>
               <p className='bg-white dark:bg-[#444444] h-4 w-[20%]  min-w-[200px]'></p>
               <p className='bg-white dark:bg-[#444444] h-4 w-1/4 min-w-[200px]'></p>
               <p className='bg-white dark:bg-[#444444] h-3 w-1/3 min-w-[300px]'></p>
